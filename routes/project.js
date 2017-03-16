@@ -3,7 +3,7 @@ var router = express.Router();
 const {Project, projects} = require('../models/projects')
 
 const findProject = (name) => {
-  return projects.find(project => name == project.name)
+    return projects.find(project => name == project.name)
 }
 
 /* GET project page. */
