@@ -24,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/projects', project);
+app.use("/public/images", express.static(__dirname + '/public/images'))
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
