@@ -7,7 +7,7 @@ const findProject = (name) => {
 }
 
 /* GET project page. */
-router.get('/', function(req, res, next) {
+router.get('/:name', function(req, res, next) {
   const project = findProject(req.params.name)
   res.render('project', { project: project });
 });
